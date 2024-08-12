@@ -1,150 +1,118 @@
-/* Serene Nature-Inspired Victorian CSS */
-
-:root {
-    --primary-color: #4A7B9D;  /* Steel Blue for sky tones */
-    --secondary-color: #2C5F2D; /* Forest Green for lush vegetation */
-    --accent-color: #2C5F2D;   /* Gold for sunlight accents */
-    --text-color: #333;        /* Dark gray for text */
-    --background-color: #F0F8FF; /* Alice Blue for a soft, airy background */
-  }
-  
-  body {
-    font-family: 'Baskerville', 'Garamond', serif;
-    background-color: var(--background-color);
-    color: var(--text-color);
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .container {
+/* General Body Style */
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    color: #2b2b2b;
     max-width: 800px;
     margin: 0 auto;
     padding: 20px;
-    background-image: 
-      linear-gradient(to bottom, rgba(74, 123, 157, 0.1) 0%, rgba(74, 123, 157, 0) 100%),
-      url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M0 100 C 20 80, 50 80, 80 100 M100 100 C 80 80, 65 80, 50 100" stroke="%232C5F2D" fill="none" stroke-width="0.5"/></svg>');
-    background-size: 100% 100%, 100px 100px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-  }
-  
-  header {
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    padding: 20px;
-    text-align: center;
-    border-bottom: 5px solid var(--accent-color);
-    background-image: linear-gradient(to bottom, var(--primary-color), #6A9BBD);
-  }
-  
-  h1 {
-    font-size: 2.5em;
-    margin-bottom: 10px;
-    font-weight: normal;
-    letter-spacing: 2px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
-  }
-  
-  nav ul {
+    background-color: #f5f7fa;
+}
+
+/* Header */
+header {
+    background-color: #2e7091; /* Softer, muted blue-gray color */
+    color: #f5f7fa;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 500;
+    color: #f5f7fa
+}
+
+/* Navigation */
+nav ul {
     list-style-type: none;
     padding: 0;
-  }
-  
-  nav ul li {
-    display: inline;
-    margin-right: 20px;
-  }
-  
-  nav ul li a {
-    color: var(--background-color);
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 15px;
+}
+
+nav ul li:last-child {
+    margin-right: 0;
+}
+
+nav ul li a {
     text-decoration: none;
-    font-size: 1.1em;
-    transition: color 0.3s ease;
-  }
-  
-  nav ul li a:hover {
-    color: var(--accent-color);
-  }
-  
-  main {
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.7);
-    border: 1px solid var(--primary-color);
-    margin-top: 20px;
-  }
-  
-  h2 {
-    color: var(--secondary-color);
-    border-bottom: 2px solid var(--accent-color);
-    padding-bottom: 10px;
-    font-weight: normal;
-  }
-  
-  p {
-    margin-bottom: 20px;
-  }
-  
-  footer {
+    color: #f5f7fa; /* Brighter color for better visibility */
+    padding: 10px 10px;
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+nav ul li a:hover {
+    background-color: #78909c; /* Slightly darker shade for hover effect */
+}
+
+/* Headings */
+h1, h2 {
+    color: #1e1e1e;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+    margin-top: 1.5rem;
+}
+
+/* Footer */
+footer {
+    margin-top: 3rem;
     text-align: center;
-    padding: 20px;
-    background-color: var(--primary-color);
-    color: var(--background-color);
-    font-size: 0.9em;
-    border-top: 5px solid var(--accent-color);
-    margin-top: 20px;
-    background-image: linear-gradient(to top, var(--primary-color), #6A9BBD);
-  }
-  
-  a {
-    color: var(--secondary-color);
+    font-size: 0.9rem;
+    color: #777;
+    padding: 1rem 0;
+    border-top: 1px solid #e0e0e0;
+    background-color: #f9f9f9;
+}
+
+footer a {
+    color: #2b90d9;
     text-decoration: none;
-    border-bottom: 1px dotted var(--secondary-color);
-    transition: border-bottom 0.3s ease;
-  }
-  
-  a:hover {
-    border-bottom: 1px solid var(--secondary-color);
-  }
-  
-  /* Decorative elements */
-  .victorian-border {
-    border: 15px solid transparent;
-    border-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><path d="M0 0 C50 25, 50 75, 100 100 M100 0 C50 25, 50 75, 0 100" stroke="%234A7B9D" fill="none" stroke-width="2"/></svg>') 30 stretch;
-  }
-  
-  .nature-accent::before,
-  .nature-accent::after {
-    content: "🍃";
-    margin: 0 10px;
-  }
-  
-  /* Subtle wind animation */
-  @keyframes gentleBreeze {
-    0% { transform: rotate(0deg); }
-    50% { transform: rotate(5deg); }
-    100% { transform: rotate(0deg); }
-  }
-  
-  .gentle-breeze {
-    display: inline-block;
-    animation: gentleBreeze 5s infinite ease-in-out;
-  }
-  
-  @media (max-width: 600px) {
-    .container {
-      padding: 10px;
-    }
-    
-    header {
-      padding: 10px;
-    }
-    
-    h1 {
-      font-size: 2em;
-    }
-    
-    nav ul li {
-      display: block;
-      margin-bottom: 10px;
-    }
-  }
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #1e1e1e;
+}
+
+/* Additional Styling */
+a {
+    color: #2b90d9;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #1e1e1e;
+}
+
+button {
+    background-color: #2b90d9;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #1e1e1e;
+}
