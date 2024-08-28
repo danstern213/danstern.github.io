@@ -188,7 +188,21 @@ a:hover {
     margin-top: 0;
 }
 
+/* Energy Graph Responsive Design */
 #energy-graph {
-    width: 500px;
-    height: 300px;
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    #energy-graph {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 480px) {
+    #energy-graph {
+        max-width: 300px;
+    }
 }
